@@ -19,19 +19,71 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 24vw;
+  border: 1px solid #ccc;
+  padding: 0.5em 0.2em;
+  font-size: 1em;
+  background: #ccc;
+  border-radius: 0.5em;
+}
+
+.photo {
+  height: 10em;
+  width: 8em;
+  background-color: #ccc;
+  margin-bottom: 1em;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.6em;
+}
+
+.details p {
+  margin: 0.3em 0;
+}
+
+.dash {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
