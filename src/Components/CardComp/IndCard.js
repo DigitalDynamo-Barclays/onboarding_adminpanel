@@ -14,14 +14,14 @@ const IndCard = ({ data }) => {
         setShowPopup(false);
     }
     const feedback = (feedback) => {
-        axios.post(`http://localhost:4000/feedback/${id}`, { feedback }).then(() => {
+        axios.post(`ttps://onboardingbackend.up.railway.app/feedback/${id}`, { feedback }).then(() => {
             window.location.reload();
         })
 
     }
     const verifyFunc = (id, phone, country) => {
 
-        axios.post(`http://localhost:4000/onboarding/verify/${id}`, { phone, country }).then(() => {
+        axios.post(`https://onboardingbackend.up.railway.app/onboarding/verify/${id}`, { phone, country }).then(() => {
             window.location.reload();
         })
     }
