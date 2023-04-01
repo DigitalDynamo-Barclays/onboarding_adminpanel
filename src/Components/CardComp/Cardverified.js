@@ -10,7 +10,7 @@ const Card = () => {
 
 
     useEffect(() => {
-        axios.get('http://localhost:4000/onboarding/get-vfUser')
+        axios.get('https://onboardingbackend.up.railway.app/onboarding/get-vfUser')
             .then(response => {
                 console.log(response.data);
                 setDataList(response.data);
