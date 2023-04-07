@@ -12,7 +12,6 @@ function App() {
         <div className='dash'>
           <Card />
           <Cardverified />
-
         </div>
       </header>
     </div>
